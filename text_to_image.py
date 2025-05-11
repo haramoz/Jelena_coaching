@@ -17,7 +17,7 @@ prompt = f"I need you to generate a bonus card for popular game Wingspan game, w
 response = requests.post(
     f"https://api.stability.ai/v2beta/stable-image/generate/core",
     headers={
-        "authorization": f"Bearer sk-n0dJLrihJSGkLQ2KrYO7hZ8MkhVK1NCwb4Ub0OrfnEcrPGHh",
+        "authorization": f"Bearer ...",
         "accept": "image/*"
     },
     files={"none": ''},

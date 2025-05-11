@@ -29,7 +29,7 @@ with open(source_image_path, "rb") as source_image:
     response = requests.post(
         f"https://api.stability.ai/v2beta/stable-image/generate/sd3",
         headers={
-            "authorization": f"Bearer sk-n0dJLrihJSGkLQ2KrYO7hZ8MkhVK1NCwb4Ub0OrfnEcrPGHh",
+            "authorization": f"Bearer",
             "accept": "image/*"
         },
         files=files,
@@ -42,7 +42,7 @@ with open(source_image_path, "rb") as source_image:
         )
 
     if response.status_code == 200:
-        with open("./output.jpeg", 'wb') as file:
+        with open("./output1.jpeg", 'wb') as file:
             file.write(response.content)
         print("Image generated successfully! Saved as 'generated_image.jpeg'.")
 
